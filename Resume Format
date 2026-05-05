@@ -1,0 +1,185 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdfproducer={}, pdfcreator={}}
+\hypersetup{pdfencoding=auto, psdextra}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=2pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+\pdfcatalog{/PageMode /UseNone}
+\pdfgentounicode=0
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Your Name} \\ \vspace{1pt}
+    \small +91XXXXXXXXXX $|$ 
+    \href{mailto:yourname@email.com}{\underline{yourname@email.com}} $|$ 
+    \href{https://www.linkedin.com/in/yourprofile/}{\underline{linkedin.com/in/yourprofile}}
+\end{center}
+
+\section*{Summary}
+IIT Roorkee undergraduate (CGPA X.X/10) with internships at [Company 1] and IIT Roorkee, specializing in Machine Learning and Deep Learning. Experienced in developing scalable ML/DL solutions, optimizing model performance, and publishing research in peer-reviewed journals.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology Roorkee}{CGPA: X.X}
+      {\begin{tabular}[t]{@{}l@{}}
+   Bachelor of Technology in Electronics and Communication Engineering \\
+   Minor in Data Science and Artificial Intelligence
+   \end{tabular}}{Nov 20XX - Sept 20XX}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Senior Associate}{Jul 20XX - Present}
+  {Company Name}{}
+  \resumeItemListStart
+    \resumeItem{\textbf{Automated} workflows with \textbf{Google Apps Script}, saving \textbf{12+ hours/week} of manual effort.}
+    \resumeItem{Executed order volume allocation experiments for \textbf{250+ partners}, improving logistics partner \textbf{efficiency} by \textbf{2\%}.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Analyst Intern}{May 20XX - Jul 20XX}
+  {Company Name (Credit and Fraud Risk Team)}{}
+  \resumeItemListStart
+    \resumeItem{Engineered 10+ predictive features on large-scale \textbf{transaction datasets}, boosting fraud model \textbf{accuracy by 2\%} and \textbf{GINI by 0.08}.}
+    \resumeItem{Partnered with cross-functional teams to design KPI-aligned features, reducing false positives in fraud alerts.}
+    \resumeItem{Validated models across \textbf{6+ customer segments}, ensuring consistent performance.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Computer Vision Research Intern}{May 20XX - Jul 20XX}
+    {IIT Roorkee}{}
+    \resumeItemListStart
+      \resumeItem{Trained \textbf{deep neural networks (CNN)(PyTorch)} on \textbf{12k+ X-rays} to estimate bone age.}
+      \resumeItem{Boosted accuracy by \textbf{4\%} using ResNet50 pretrained on ImageNet.}
+      \resumeItem{Applied \textbf{contrastive learning}, reducing MAE by \textbf{8\%}.}
+      \resumeItem{Collaborated with mentors and peers to present results and refine models based on feedback.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{Project Name 1} $|$ \emph{Python, MATLAB, Meta Learning, PyTorch}}{Dec 20XX - Present}
+    \resumeItemListStart
+      \resumeItem{Optimized precoding and transfer matrices for RIS-aided MISO using \textbf{gradient-based meta learning}.}
+      \resumeItem{Achieved \textbf{106\% spectral efficiency gain} by optimizing system with gradient based meta learning; work under publication.}
+      \resumeItem{Effectively communicated research outcomes to faculty mentors through structured presentations.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Project Name 2} $|$ \emph{Python, Neural Network, PyTorch}}{Mar 20XX - May 20XX}
+    \resumeItemListStart
+      \resumeItem{Built encoder-decoder networks achieving a \textbf{PSNR \textgreater 30 dB} for image reconstruction.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt]
+  \small{\item{
+  \textbf{Programming Languages:} Python, SQL, MATLAB, C++ basic \\
+  \textbf{Machine Learning \& AI:} Data Analytics, Neural Networks, Statistics, Data Visualization, Business Analytics, Transfer Learning \\
+  \textbf{Frameworks \& Tools:} Excel, PPT, PyTorch, TensorFlow, Scikit-learn, Pandas, NumPy, Git, Jupyter \\
+  \textbf{Cloud \& Deployment (Familiar with):} AWS, GCP, Docker, Flask (for ML model deployment), CI/CD \\
+  }}
+\end{itemize}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\resumeItemListStart 
+  \resumeItem{Secured \textbf{Xth place nationwide} among XXXX+ participants in \textbf{Hackathon Name}.}
+  \resumeItem{Awarded the \textbf{Scholarship Name} twice (\textbf{₹X,XX,000 each}) for academic excellence.}
+\resumeItemListEnd
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+\resumeSubHeadingListStart
+  \item
+    X. Author, \textbf{Y. Author}, Z. Author — 
+    \emph{Publication Title Here}, 
+    \textbf{Journal Name, Year}
+\resumeSubHeadingListEnd
+
+\end{document}
